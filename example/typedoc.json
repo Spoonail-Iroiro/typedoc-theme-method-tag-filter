@@ -1,0 +1,15 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "name": "My Example",
+  "entryPoints": [ "./src" ],
+  "visibilityFilters": {
+    "protected": false,
+    "private": false,
+    "@internal": false,
+    "inherited": true,
+    "external": false,
+  },
+  "tsconfig": "./tsconfig.json",
+  "out": "./docs",
+
+}

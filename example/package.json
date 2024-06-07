@@ -1,0 +1,19 @@
+{
+  "name": "example2",
+  "version": "0.1.0",
+  "description": "example",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "example": "node ./examples/example.js"
+  },
+  "author": "Spoonail",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "tsx": "^4.13.0",
+    "typedoc": "^0.25.13",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.12.0"
+  }
+}
