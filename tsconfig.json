@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es2020",
+    "target": "ESNext",
     "module": "commonjs",
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "outDir": "dist",
@@ -11,5 +12,5 @@
     "jsxFactory": "JSX.createElement",
     "jsxFragmentFactory": "JSX.Fragment"
   },
-  "include": ["src"]
+  "include": [ "src" ]
 }

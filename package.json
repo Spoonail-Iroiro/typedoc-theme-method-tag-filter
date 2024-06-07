@@ -1,5 +1,5 @@
 {
-  "name": "typedoc-theme-modifier-filter",
+  "name": "typedoc-theme-method-tag-filter",
   "version": "0.1.0",
   "main": "dist/index.js",
   "author": "Spoonail",
@@ -8,18 +8,21 @@
     "typedoc-theme"
   ],
   "engines": {
-    "node": ">= 14"
+    "node": ">= 18"
   },
   "devDependencies": {
-    "typedoc": "^0.23.0",
-    "typescript": "^4.7.4"
+    "eslint": "^8.57.0",
+    "typedoc": "^0.25.1",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^7.12.0"
   },
   "peerDependencies": {
-    "typedoc": "^0.23.0"
+    "typedoc": "^0.25.1"
   },
   "scripts": {
     "build": "tsc",
     "predocs": "tsc",
-    "docs": "typedoc src --plugin ./dist/index.js --theme footer"
+    "docs": "typedoc src --plugin ./dist/index.js --theme method-tag-filter",
+    "docs:example": "npm run build && typedoc --options ./example/typedoc.json --plugin ./dist/index.js --theme method-tag-filter"
   }
 }
